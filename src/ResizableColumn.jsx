@@ -4,7 +4,7 @@ import { css, Global } from "@emotion/react";
 import { useState, useEffect, useRef } from "react";
 
 export const DraggableColumnControl = () => {
-  const [position, setPosition] = useState(200);
+  const [position, setPosition] = useState(1);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
   const rectRef = useRef(null);
@@ -27,7 +27,8 @@ export const DraggableColumnControl = () => {
       const movementX = event.movementX;
 
       // Increment the position by 0.5px for every 5 screen pixels
-      const incrementX = (movementX / 5) * 4;
+      const incrementX = (movementX / 20) * 4;
+
       setPosition((prevPosition) => prevPosition + incrementX);
 
       // Update the fake mouse pointer position
@@ -80,7 +81,7 @@ export const DraggableColumnControl = () => {
       style={{
         position: "relative",
         display: "grid",
-        gridTemplateColumns: `100px ${position.toFixed(0)}px 100px`,
+        gridTemplateColumns: `100px ${position.toFixed(0)}em 100px`,
         border: "1px solid red",
       }}
     >
@@ -120,7 +121,7 @@ export const DraggableColumnControl = () => {
             transform: "translateX(-5px)",
           }}
         ></div>
-        <span>{position.toFixed(0)}px</span>
+        <span>{position.toFixed(0)}em</span>
         <div ref={rectRef}>
           <span
             tabIndex={-1}
