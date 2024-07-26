@@ -1,0 +1,46 @@
+{
+  "hash": "bbc018cd",
+  "configHash": "42e155c0",
+  "lockfileHash": "29a287de",
+  "browserHash": "9f89638d",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "283ee69f",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "6ba60cc3",
+      "needsInterop": true
+    },
+    "@emotion/react": {
+      "src": "../../node_modules/@emotion/react/dist/emotion-react.browser.esm.js",
+      "file": "@emotion_react.js",
+      "fileHash": "bfbdbec1",
+      "needsInterop": false
+    },
+    "colorjs.io": {
+      "src": "../../node_modules/colorjs.io/dist/color.js",
+      "file": "colorjs__io.js",
+      "fileHash": "1ad2036a",
+      "needsInterop": false
+    },
+    "react-tooltip": {
+      "src": "../../node_modules/react-tooltip/dist/react-tooltip.min.mjs",
+      "file": "react-tooltip.js",
+      "fileHash": "cd153835",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-4SFRHSJ3": {
+      "file": "chunk-4SFRHSJ3.js"
+    },
+    "chunk-EQCVQC35": {
+      "file": "chunk-EQCVQC35.js"
+    }
+  }
+}
